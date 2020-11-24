@@ -16,81 +16,31 @@ img {
   max-width: 100%;
 }
 
-/* Breakpoints
------------------------------------------------*/
-$breakpoints: (
-  "xs": "400px",
-  "sm": "600px",
-  "m": "900px",
-  "lg": "1200px",
-  "xl": "1800px",
-);
-
-@mixin xs-media {
-  @media (min-width: 400px) {
-    @content;
-  }
-}
-
-@mixin sm-media {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-
-@mixin m-media {
-  @media (min-width: 900px) {
-    @content;
-  }
-}
-
-@mixin lg-media {
-  @media (min-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin xl-media {
-  @media (min-width: 1800px) {
-    @content;
-  }
-}
-
 /* Grid container
 -----------------------------------------------*/
 
-%grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.grid {
-  @extend %grid;
-  grid-gap: 10px;
-}
+$min-breakpoints: (
+  "sm": "576px",
+  "m": "768px",
+  "lg": "992px",
+  "xl": "1200px",
+);
 
-.grid-no-gap {
-  @extend %grid;
-}
-
-/* 
-  Will output 12 grid item column spans per breakpoint, named accordingly. 
-  Example: 
-  @media (min-width: 900px) {
-    grid-m-5 {
-      grid-column: span 5
-    }
-  }
-*/
-
------------------------------------------------*/
-
-@each $name, $breakpoint in $breakpoints {
+@each $name, $breakpoint in $min-breakpoints {
   @media (min-width: $breakpoint) {
     @for $i from 1 through 12 {
-      grid-#{$name}-#{$i} {
+      .grid-#{$name}-#{$i} {
         grid-column: span $i;
       }
+    }
+    .grid-#{$name} {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
     }
   }
 }
@@ -155,16 +105,11 @@ $breakpoints: (
   position: absolute;
 }
 
-/* 
-  Font-sizes - will output classes and their respective font sizes.
-  Example: f-10 {
-    font-size: 10px
-  }
-*/
+/* Font-sizes
+-----------------------------------------------*/
 
 @for $i from 8 through 40 {
   f-#{$i} {
-    font-size: $ipx;
+    font-size: #{$i}px;
   }
 }
-
