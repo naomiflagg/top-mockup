@@ -2,54 +2,131 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
 
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /* Flaggrid */
-
 /* Miscellaneous
 -----------------------------------------------*/
 *:before,
@@ -63,6 +140,9 @@ table {
 
 img {
   max-width: 100%; }
+
+.no-display {
+  display: none; }
 
 /* Grid container
 -----------------------------------------------*/
@@ -277,103 +357,103 @@ img {
 
 /* Font-sizes
 -----------------------------------------------*/
-f-8 {
+.f-8 {
   font-size: 8px; }
 
-f-9 {
+.f-9 {
   font-size: 9px; }
 
-f-10 {
+.f-10 {
   font-size: 10px; }
 
-f-11 {
+.f-11 {
   font-size: 11px; }
 
-f-12 {
+.f-12 {
   font-size: 12px; }
 
-f-13 {
+.f-13 {
   font-size: 13px; }
 
-f-14 {
+.f-14 {
   font-size: 14px; }
 
-f-15 {
+.f-15 {
   font-size: 15px; }
 
-f-16 {
+.f-16 {
   font-size: 16px; }
 
-f-17 {
+.f-17 {
   font-size: 17px; }
 
-f-18 {
+.f-18 {
   font-size: 18px; }
 
-f-19 {
+.f-19 {
   font-size: 19px; }
 
-f-20 {
+.f-20 {
   font-size: 20px; }
 
-f-21 {
+.f-21 {
   font-size: 21px; }
 
-f-22 {
+.f-22 {
   font-size: 22px; }
 
-f-23 {
+.f-23 {
   font-size: 23px; }
 
-f-24 {
+.f-24 {
   font-size: 24px; }
 
-f-25 {
+.f-25 {
   font-size: 25px; }
 
-f-26 {
+.f-26 {
   font-size: 26px; }
 
-f-27 {
+.f-27 {
   font-size: 27px; }
 
-f-28 {
+.f-28 {
   font-size: 28px; }
 
-f-29 {
+.f-29 {
   font-size: 29px; }
 
-f-30 {
+.f-30 {
   font-size: 30px; }
 
-f-31 {
+.f-31 {
   font-size: 31px; }
 
-f-32 {
+.f-32 {
   font-size: 32px; }
 
-f-33 {
+.f-33 {
   font-size: 33px; }
 
-f-34 {
+.f-34 {
   font-size: 34px; }
 
-f-35 {
+.f-35 {
   font-size: 35px; }
 
-f-36 {
+.f-36 {
   font-size: 36px; }
 
-f-37 {
+.f-37 {
   font-size: 37px; }
 
-f-38 {
+.f-38 {
   font-size: 38px; }
 
-f-39 {
+.f-39 {
   font-size: 39px; }
 
-f-40 {
+.f-40 {
   font-size: 40px; }
 
 /*# sourceMappingURL=flaggrid.css.map */

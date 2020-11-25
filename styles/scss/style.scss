@@ -1,1 +1,300 @@
-@use 'flaggrid';
+@font-face {
+  font-family: "Norse";
+  font-weight: 700;
+  src: url("../Norse-Bold.otf") format("opentype");
+}
+
+/* Variables
+-----------------------------------------------*/
+
+$gray-font: rgba(74, 74, 74, 0.7);
+$dark-font: #4a4a4a;
+$orange: #ce973e;
+$dark-orange: #cc9543;
+$teal: #6abfc3;
+
+/* Global styles
+-----------------------------------------------*/
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: $gray-font;
+}
+
+.container {
+  margin-top: 150px;
+}
+
+main,
+header {
+  text-align: center;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h1,
+h2,
+h3,
+main p {
+  margin: 35px auto;
+}
+
+h2,
+h3 {
+  color: $dark-font;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+button {
+  margin: 40px 0;
+  padding: 16px 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+}
+
+.norse {
+  font-family: "Norse";
+  color: $orange;
+}
+
+.logo {
+  height: 70px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 16px 56px;
+  }
+}
+
+/* Nav styles
+-----------------------------------------------*/
+
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 5px 30px;
+  background-color: #fff;
+
+  .norse {
+    margin-left: 8px;
+  }
+}
+
+.right-nav li {
+  padding: 0 7px;
+  font-weight: 700;
+}
+
+.fa-sort-down::before {
+  margin-left: 0.25em;
+  vertical-align: 0.5em;
+}
+
+.fa-bars {
+  color: $teal;
+}
+
+@media (min-width: 768px) {
+  .right-nav {
+    display: flex;
+  }
+
+  .nav-burger {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 10px 168px;
+
+    .norse {
+      font-size: 32px;
+    }
+  }
+}
+
+/* Header styles
+-----------------------------------------------*/
+
+h1 {
+  max-width: 80%;
+  color: $orange;
+  font-weight: 300;
+}
+
+header button {
+  background-color: $teal;
+}
+
+/* How it works section
+-----------------------------------------------*/
+
+@media (min-width: 768px) {
+  .lg-icons {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+}
+
+.how-works img {
+  height: 165px;
+}
+
+.how-works p {
+  padding: 0 15px;
+  max-width: 700px;
+}
+
+/* Topics section
+-----------------------------------------------*/
+
+.topics {
+  background-color: #f3f3f3;
+}
+
+.topics-container {
+  flex-wrap: wrap;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.topic {
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  padding: 25px 46px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 7px 16px 0px;
+}
+
+.topics img {
+  height: 160px;
+  width: 160px;
+}
+
+.topic h3 {
+  margin: 15px 0;
+}
+
+.topics button {
+  background-color: $dark-orange;
+}
+
+/* Success stories section
+-----------------------------------------------*/
+
+.success-stories {
+  h2 {
+    margin-bottom: 90px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  a {
+    color: $gray-font;
+  }
+
+  button {
+    background-color: $teal;
+  }
+}
+
+.grid-xl-6 {
+  align-items: start;
+  max-width: 600px;
+  margin: 0 auto 80px auto;
+  text-align: left;
+
+  p,
+  h3 {
+    margin: 0 0 5px 25px;
+  }
+
+  h3 {
+    color: $orange;
+    font-weight: 400;
+  }
+}
+
+/* Footer
+-----------------------------------------------*/
+
+footer {
+  padding: 50px;
+  justify-items: center;
+
+  .norse {
+    margin-left: 10px;
+  }
+
+  i {
+    padding: 15px;
+    color: $orange;
+    font-size: 24px;
+  }
+}
+
+.right-footer {
+  div {
+    padding: 30px;
+  }
+
+  li {
+    padding: 7px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    padding: 0;
+
+    .invis {
+      display: none;
+    }
+
+    i {
+      padding: 30px;
+    }
+  }
+}
+
+.comments {
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: $teal;
+}
