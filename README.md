@@ -2,7 +2,7 @@
 
 This mockup of The Odin Project's homepage was developed as part of The Odin Project's [Ruby on Rails Curriculum](http://www.theodinproject.com).
 
-The mockup can be viewed [here](hhttps://naomiflagg.github.io/top-mockup/).
+The mockup can be viewed [here](https://naomiflagg.github.io/top-mockup/).
 
 ## Purpose
 
