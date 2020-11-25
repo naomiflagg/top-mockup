@@ -68,6 +68,12 @@ button {
   box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
 }
 
+@media (min-width: 768px) {
+  button {
+    padding: 16px 56px;
+  }
+}
+
 .gradient {
   background-image: linear-gradient(to bottom, #fff, #eee);
 }
@@ -81,10 +87,30 @@ button {
   height: 70px;
 }
 
-@media (min-width: 768px) {
-  button {
-    padding: 16px 56px;
-  }
+/* Global hover styles
+-----------------------------------------------*/
+
+nav li,
+button,
+.topic,
+.name,
+.logo,
+.norse,
+footer li,
+.comments {
+  cursor: pointer;
+}
+
+.right-nav li:hover,
+.name:hover,
+a:hover,
+footer i:hover,
+footer li:hover {
+  color: #000 !important;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 /* Nav styles
